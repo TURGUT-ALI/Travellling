@@ -97,37 +97,68 @@ body{
     
 }
 .information{
-    background-color: rgb(128, 128, 128);
+    background-color: white;
     width: 100%;
     height: 100vh;
     display: grid;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
-    box-shadow: 0px 0px 15px 3px rgba(178,179,174,0.86);
     
-
+    
+    
+    
 }
 .information1{
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
     
+    box-shadow: 0px 0px 15px 3px rgba(178,179,174,0.86);
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    row-gap: 50px;
-    
-    
     
 }
-.information1-pic-container{
 
-    background-image: url("icons/travelmain.jpg");
+.information1-pic-container{
+    
+    background-image: url("icons/skardu2.jpg");
     background-position: center;
     background-size: cover;
-
+    
+    height: 300px;
+    background-color: pink;
+    padding-top: 20px;
+    
+}
+.information1-text{
+    background-color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+}
+.information2-pic-container{
+    
+    background-image: url("icons/lahore.jpg");
+    background-position: top;
+    background-size: cover;
+    
     height: 300px;
     background-color: pink;
     
 }
-.information1-text{
+.information2{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    box-shadow: 0px 0px 15px 3px rgba(178,179,174,0.86);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+} 
+.information2-text{
     background-color: white;
     height: 300px;
     display: flex;
@@ -139,7 +170,7 @@ body{
 }
 .city-name{
     font-size: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 .message{
     font-size: 20px;
@@ -162,5 +193,94 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    .message{
+        font-size: 15px;
+    }
+    .city-name{
+        font-size: 25px;
+
+    }
+}
+@media screen and (max-width:800px) {
+    .information{
+        background-color: white;
+        width: 100%;
+        height: 220vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        
+        
+        
+        
+    }
+    .information1{
+        margin-left: 30px;
+        margin-right: 30px;
+        
+        box-shadow: 0px 0px 15px 3px rgba(178,179,174,0.86);
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .information1-pic-container{
     
+        background-image: url("icons/skardu2.jpg");
+        background-position: center;
+        background-size: cover;
+        
+        height: 70vh;
+        background-color: pink;
+        padding-top: 20px;
+        
+    }
+    .information1-text{
+        background-color: white;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        
+    }
+
+    .information2{
+        margin-left: 30px;
+        margin-right: 30px;
+        
+        box-shadow: 0px 0px 15px 3px rgba(178,179,174,0.86);
+        
+        display: flex;
+        flex-direction: column-reverse;
+    } 
+    .information2-pic-container{
+    
+        background-image: url("icons/lahore.jpg");
+        background-position: top;
+        background-size: cover;
+        
+        height: 70vh;
+        background-color: pink;
+        
+    }
+    .information2-text{
+        background-color: white;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    
+    
+    
+
 }
